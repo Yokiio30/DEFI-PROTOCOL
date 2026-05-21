@@ -1,0 +1,26 @@
+{
+  "name": "defi-protocol",
+  "version": "1.0.0",
+  "description": "SC6107 Option 3: Upgradeable DeFi Protocol Suite — LendingPool, LiquidityMining, Governance",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=frontend",
+    "test": "cd contracts && forge test",
+    "deploy:local": "cd contracts && forge script script/Deploy.s.sol --rpc-url http://127.0.0.1:8545 --broadcast",
+    "demo:setup": "cd contracts && forge script script/DemoSetup.s.sol --tc DemoSetupScript --rpc-url http://127.0.0.1:8545 --broadcast"
+  },
+  "keywords": [
+    "defi",
+    "solidity",
+    "ethereum",
+    "uups",
+    "governance",
+    "lending",
+    "liquidity-mining"
+  ],
+  "license": "MIT"
+}
