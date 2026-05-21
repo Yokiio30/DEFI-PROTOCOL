@@ -717,6 +717,11 @@ defi-protocol/
 │   ├── architecture.md
 │   ├── security-analysis.md
 │   └── gas-optimization.md
+├── scripts/
+│   ├── deploy.sh                 ← Linux/macOS deployment helper
+│   ├── demo-setup.sh             ← Linux/macOS demo environment setup
+│   └── demo-setup.ps1            ← Windows PowerShell demo setup
+├── package.json
 └── README.md
 ```
 
