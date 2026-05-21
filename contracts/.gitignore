@@ -1,0 +1,11 @@
+# Foundry build artifacts
+out/
+cache/
+broadcast/*/31337/
+
+# Forge test artifacts
+test-failures
+
+# Editor / OS
+.DS_Store
+Thumbs.db

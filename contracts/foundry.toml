@@ -1,0 +1,22 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+test = "test"
+cache_path = "cache"
+solc_version = "0.8.22"
+optimizer = true
+optimizer_runs = 200
+via_ir = true
+fuzz = { runs = 256 }
+invariant = { runs = 64, depth = 15 }
+verbosity = 2
+
+[profile.ci]
+fuzz = { runs = 1000 }
+invariant = { runs = 256, depth = 30 }
+
+[fmt]
+line_length = 100
+tab_width = 4
+bracket_spacing = true
