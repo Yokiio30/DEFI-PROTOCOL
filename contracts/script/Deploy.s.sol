@@ -61,7 +61,7 @@ contract DeployScript is Script {
         bytes memory govInit = abi.encodeWithSelector(
             Governance.initialize.selector,
             address(govToken),   // governance token
-            1 hours,             // timelock delay  (shortened for demo; prod: 2 days)
+            1 days,              // timelock delay
             5 minutes,           // voting delay    (shortened for demo; prod: 1 hour)
             30 minutes,          // voting period   (shortened for demo; prod: 3 days)
             1_000 ether,         // proposal threshold (1000 DPT)
