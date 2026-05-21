@@ -13,6 +13,7 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
  * @title LiquidityMining
  * @notice Time-weighted liquidity mining rewards for LP token stakers.
  *         Supports multiple reward tokens and multiple staking pools.
+ * @author JIANG XIAOYU
  * @dev UUPS upgradeable. Storage layout is append-only.
  *
  *      Reward algorithm:
